@@ -27,7 +27,7 @@
         <!--Item 1-->
         <scene sceneID="thR-MV-1Vx">
             <objects>
-                <viewController id="KOv-GB-dId" customClass="ViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KOv-GB-dId" customClass="ListViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DUK-Mq-1S9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
