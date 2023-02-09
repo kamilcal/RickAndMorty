@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D2349F242990726800F7B62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F232990726800F7B62A /* AppDelegate.swift */; };
-		D2349F262990726800F7B62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F252990726800F7B62A /* SceneDelegate.swift */; };
 		D2349F282990726800F7B62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F272990726800F7B62A /* ViewController.swift */; };
 		D2349F2B2990726800F7B62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2349F292990726800F7B62A /* Main.storyboard */; };
 		D2349F2E2990726800F7B62A /* RickAndMorty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2349F2C2990726800F7B62A /* RickAndMorty.xcdatamodeld */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		D2349F202990726800F7B62A /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2349F232990726800F7B62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2349F252990726800F7B62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2349F272990726800F7B62A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2349F2A2990726800F7B62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2349F2D2990726800F7B62A /* RickAndMorty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RickAndMorty.xcdatamodel; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				D2349F232990726800F7B62A /* AppDelegate.swift */,
-				D2349F252990726800F7B62A /* SceneDelegate.swift */,
 				D2349F272990726800F7B62A /* ViewController.swift */,
 				D2349F292990726800F7B62A /* Main.storyboard */,
 				D2349F2F2990726900F7B62A /* Assets.xcassets */,
@@ -264,7 +261,6 @@
 				D2349F2E2990726800F7B62A /* RickAndMorty.xcdatamodeld in Sources */,
 				D2349F282990726800F7B62A /* ViewController.swift in Sources */,
 				D2349F242990726800F7B62A /* AppDelegate.swift in Sources */,
-				D2349F262990726800F7B62A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
