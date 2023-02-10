@@ -16,6 +16,8 @@
 		D2349F3E2990726900F7B62A /* RickAndMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F3D2990726900F7B62A /* RickAndMortyTests.swift */; };
 		D2349F482990726900F7B62A /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F472990726900F7B62A /* RickAndMortyUITests.swift */; };
 		D2349F4A2990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F492990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift */; };
+		D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBD2995B68700F7B62A /* ListViewModel.swift */; };
+		D2349FC02995B69400F7B62A /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBF2995B69400F7B62A /* ListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D2349F432990726900F7B62A /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2349F472990726900F7B62A /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		D2349F492990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2349FBD2995B68700F7B62A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D2349FBF2995B69400F7B62A /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				D2349F272990726800F7B62A /* ListViewController.swift */,
+				D2349FBD2995B68700F7B62A /* ListViewModel.swift */,
+				D2349FBF2995B69400F7B62A /* ListModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			files = (
 				D2349F2E2990726800F7B62A /* RickAndMorty.xcdatamodeld in Sources */,
 				D2349F282990726800F7B62A /* ListViewController.swift in Sources */,
+				D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */,
 				D2349F242990726800F7B62A /* AppDelegate.swift in Sources */,
+				D2349FC02995B69400F7B62A /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
