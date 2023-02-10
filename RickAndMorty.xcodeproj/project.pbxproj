@@ -18,6 +18,7 @@
 		D2349F4A2990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349F492990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift */; };
 		D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBD2995B68700F7B62A /* ListViewModel.swift */; };
 		D2349FC02995B69400F7B62A /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBF2995B69400F7B62A /* ListModel.swift */; };
+		D2349FC22996F9C900F7B62A /* ListViewControllerTableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FC12996F9C900F7B62A /* ListViewControllerTableHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D2349F492990726900F7B62A /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2349FBD2995B68700F7B62A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		D2349FBF2995B69400F7B62A /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		D2349FC12996F9C900F7B62A /* ListViewControllerTableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListViewControllerTableHelper.swift; path = ../../../../../../Downloads/ListViewControllerTableHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		D2349FB92995A8BD00F7B62A /* List */ = {
 			isa = PBXGroup;
 			children = (
+				D2349FC12996F9C900F7B62A /* ListViewControllerTableHelper.swift */,
 				D2349F272990726800F7B62A /* ListViewController.swift */,
 				D2349FBD2995B68700F7B62A /* ListViewModel.swift */,
 				D2349FBF2995B69400F7B62A /* ListModel.swift */,
@@ -317,6 +320,7 @@
 				D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */,
 				D2349F242990726800F7B62A /* AppDelegate.swift in Sources */,
 				D2349FC02995B69400F7B62A /* ListModel.swift in Sources */,
+				D2349FC22996F9C900F7B62A /* ListViewControllerTableHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

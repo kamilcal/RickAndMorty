@@ -9,11 +9,27 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    
+    private let viewModel = ListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.didViewLoad()
+        setupBindings()
     }
 
 
 }
 
+private extension ListViewController {
+    
+    func setupBindings(){
+        viewModel.onErrorDetected = { [weak self] message in
+            
+        }
+        viewModel.refreshItems = { [weak self] items in
+            
+        }
+    }
+}
