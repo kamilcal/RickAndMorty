@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol ListModelProtocol: AnyObject {
     
@@ -16,15 +17,25 @@ protocol ListModelProtocol: AnyObject {
 
 class ListModel{
     
-    private var data: [Any] = []
+    private (set) var data: [CharacterData] = []
+    
     
     weak var delegate: ListModelProtocol?
     
     func fetchData(){
         if Internet.isOnline() {
-            
+            AF.request("https://rickandmortyapi.com/api/character/?page=1").responseDecodable(of: APIData.self) { (res) in
+                guard
+                    let response = res.value
+                else {
+                    self.delegate?.didDataCouldntFetch()
+                    return
+                }
+                self.data = response.results ?? []
+                self.delegate?.didLiveDataFetch()
+            }
         } else {
-            
+
         }
     }
     
