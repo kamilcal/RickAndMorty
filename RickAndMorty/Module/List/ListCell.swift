@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ListCell: UITableViewCell {
 
@@ -24,6 +25,7 @@ class ListCell: UITableViewCell {
     }
 
     func configure(with model: ListCellModel){
+        contImageView.kf.setImage(with: URL.init(string: model.imageURL))
         nameValueLbl.text = model.name
         genderValueLbl.text = model.gender
         statusValueLbl.text = model.status

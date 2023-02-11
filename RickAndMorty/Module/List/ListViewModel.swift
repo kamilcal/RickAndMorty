@@ -11,7 +11,7 @@ class  ListViewModel{
     
     private let model = ListModel()
     
-    var onErrorDetected: (() -> ())?
+    var onErrorDetected: ((String) -> ())?
     var refreshItems: (([ListCellModel]) -> ())? 
     init(){
         model.delegate = self

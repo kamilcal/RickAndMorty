@@ -32,9 +32,11 @@ private extension ListViewController {
         tableHelper = .init(tableView: listTableView, viewModel: viewModel)
     }
     
-    func setupBindings(){
+    func setupBindings() {
         viewModel.onErrorDetected = { [weak self] message in
-            
+            let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+            alertController.addAction(.init(title: "ok", style: .default))
+            self?.present(alertController, animated: true)
         }
         viewModel.refreshItems = { [weak self] items in
             self?.tableHelper.setItems(items)
