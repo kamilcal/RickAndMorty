@@ -19,6 +19,8 @@
 		D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBD2995B68700F7B62A /* ListViewModel.swift */; };
 		D2349FC02995B69400F7B62A /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FBF2995B69400F7B62A /* ListModel.swift */; };
 		D2349FC22996F9C900F7B62A /* ListViewControllerTableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FC12996F9C900F7B62A /* ListViewControllerTableHelper.swift */; };
+		D2349FC529970B9100F7B62A /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2349FC329970B9100F7B62A /* ListCell.swift */; };
+		D2349FC629970B9100F7B62A /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2349FC429970B9100F7B62A /* ListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D2349FBD2995B68700F7B62A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		D2349FBF2995B69400F7B62A /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		D2349FC12996F9C900F7B62A /* ListViewControllerTableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListViewControllerTableHelper.swift; path = ../../../../../../Downloads/ListViewControllerTableHelper.swift; sourceTree = "<group>"; };
+		D2349FC329970B9100F7B62A /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		D2349FC429970B9100F7B62A /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				D2349F272990726800F7B62A /* ListViewController.swift */,
 				D2349FBD2995B68700F7B62A /* ListViewModel.swift */,
 				D2349FBF2995B69400F7B62A /* ListModel.swift */,
+				D2349FC329970B9100F7B62A /* ListCell.swift */,
+				D2349FC429970B9100F7B62A /* ListCell.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2349F332990726900F7B62A /* LaunchScreen.storyboard in Resources */,
+				D2349FC629970B9100F7B62A /* ListCell.xib in Resources */,
 				D2349F302990726900F7B62A /* Assets.xcassets in Resources */,
 				D2349F2B2990726800F7B62A /* Main.storyboard in Resources */,
 			);
@@ -318,6 +325,7 @@
 				D2349F2E2990726800F7B62A /* RickAndMorty.xcdatamodeld in Sources */,
 				D2349F282990726800F7B62A /* ListViewController.swift in Sources */,
 				D2349FBE2995B68700F7B62A /* ListViewModel.swift in Sources */,
+				D2349FC529970B9100F7B62A /* ListCell.swift in Sources */,
 				D2349F242990726800F7B62A /* AppDelegate.swift in Sources */,
 				D2349FC02995B69400F7B62A /* ListModel.swift in Sources */,
 				D2349FC22996F9C900F7B62A /* ListViewControllerTableHelper.swift in Sources */,

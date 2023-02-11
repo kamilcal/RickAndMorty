@@ -48,7 +48,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="XrO-7f-Fuo"/>
                     <connections>
-                        <outlet property="tableView" destination="Fa8-0p-kjH" id="11r-g7-bi5"/>
+                        <outlet property="listTableView" destination="Fa8-0p-kjH" id="6Qf-zC-EXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46T-E1-7HK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

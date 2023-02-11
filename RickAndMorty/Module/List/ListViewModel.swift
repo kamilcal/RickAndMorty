@@ -12,7 +12,7 @@ class  ListViewModel{
     private let model = ListModel()
     
     var onErrorDetected: (() -> ())?
-    var refreshItems: (([Any]) -> ())? //TODO: -
+    var refreshItems: (([ListCellModel]) -> ())? 
     init(){
         model.delegate = self
     }
