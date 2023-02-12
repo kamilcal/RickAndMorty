@@ -23,7 +23,7 @@ class ListModel{
     weak var delegate: ListModelProtocol?
     
     func fetchData(){
-        if Internet.isOnline() {
+        if InternetManager.shared.isInternetActive() {
             AF.request("https://rickandmortyapi.com/api/character/?page=1").responseDecodable(of: APIData.self) { (res) in
                 guard
                     let response = res.value
