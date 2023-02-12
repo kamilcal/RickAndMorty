@@ -21,6 +21,7 @@ class ListModel{
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     private (set) var data: [CharacterData] = []
+    private (set) var databaseData : [ListEntity] = []
     
     weak var delegate: ListModelProtocol?
     
@@ -35,9 +36,13 @@ class ListModel{
                 }
                 self.data = response.results ?? []
                 self.delegate?.didLiveDataFetch()
+                
+                for item in self.data {
+                    self.saveToCoreData(item)
+                }
             }
         } else {
-
+            retrieveFromCoreData()
         }
     }
     
@@ -62,7 +67,18 @@ class ListModel{
     }
     
     func retrieveFromCoreData(){
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<ListEntity>(entityName: "ListEntity")
         
+        do{
+            let result = try context.fetch(request)
+            print("\(result.count)")
+            self.databaseData = result
+            delegate?.didCacheDataFetch()
+        } catch {
+            print("Error while fetching data to CoreData")
+            delegate?.didDataCouldntFetch()
+        }
     }
     
 }
