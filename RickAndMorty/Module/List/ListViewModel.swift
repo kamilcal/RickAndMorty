@@ -30,13 +30,18 @@ class  ListViewModel{
 }
 
 extension ListViewModel: ListModelProtocol{
+    
     func didLiveDataFetch(){
-        
+        let cellModels: [ListCellModel] = model.data.map { .init(imageURL: $0.image ?? "", name: $0.name ?? "" , status: $0.status ?? "", gender: $0.gender ?? "") 
+        }
+        refreshItems?(cellModels)
     }
     func didCacheDataFetch(){
-        
+        let cellModels: [ListCellModel] = model.databaseData.map { .init(imageURL: $0.imageUrl ?? "", name: $0.name ?? "" , status: $0.status ?? "", gender: $0.gender ?? "")
+        }
+        refreshItems?(cellModels)
     }
     func didDataCouldntFetch(){
-//        TODO:
+        onErrorDetected?("Please try again later")
     }
 }
