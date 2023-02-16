@@ -36,9 +36,10 @@ class ListCell: UITableViewCell {
 private extension ListCell {
     
     private func setupUI(){
-        nameTitleLbl.text = "Name"
-        genderTitleLbl.text = "Gender"
-        statusTitleLbl.text = "Status"
+        nameTitleLbl.text = "Name:"
+        genderTitleLbl.text = "Gender:"
+        statusTitleLbl.text = "Status:"
+        contImageView.layer.cornerRadius = 25
     }
 }
 
