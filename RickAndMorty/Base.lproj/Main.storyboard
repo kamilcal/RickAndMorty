@@ -55,11 +55,20 @@
                     <navigationItem key="navigationItem" title="RickAndMorty" id="h00-i1-RUK"/>
                     <connections>
                         <outlet property="listTableView" destination="Fa8-0p-kjH" id="6Qf-zC-EXR"/>
+                        <segue destination="oib-FK-f0f" kind="presentation" identifier="showDetail" id="bXi-xm-g7k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46T-E1-7HK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1205.3435114503816" y="-407.04225352112678"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="gmy-ZE-0LT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="oib-FK-f0f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b8-iL-BmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="-448"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wwU-7N-vEC">
