@@ -11,13 +11,12 @@ import Kingfisher
 class ListCell: UITableViewCell {
 
     
+    @IBOutlet var backGroundImage: UIImageView!
     @IBOutlet private var contImageView: UIImageView!
-    @IBOutlet private var nameTitleLbl: UILabel!
     @IBOutlet private var nameValueLbl: UILabel!
-    @IBOutlet private var genderTitleLbl: UILabel!
     @IBOutlet private var genderValueLbl: UILabel!
-    @IBOutlet private var statusTitleLbl: UILabel!
     @IBOutlet private var statusValueLbl: UILabel!
+    @IBOutlet var statusImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +28,16 @@ class ListCell: UITableViewCell {
         nameValueLbl.text = model.name
         genderValueLbl.text = model.gender
         statusValueLbl.text = model.status
+        switch model.status {
+        case "Alive":
+            statusImage.backgroundColor = .green
+        case "Dead":
+            statusImage.backgroundColor = .red
+        case "unknown":
+            statusImage.backgroundColor = .systemGray
+        default:
+            statusImage.backgroundColor = .systemGray
+        }
     }
     
 }
@@ -36,10 +45,15 @@ class ListCell: UITableViewCell {
 private extension ListCell {
     
     private func setupUI(){
-        nameTitleLbl.text = "Name"
-        genderTitleLbl.text = "Gender"
-        statusTitleLbl.text = "Status"
+        statusImage.layer.cornerRadius = statusImage.frame.size.width / 2
+
+        backGroundImage.layer.cornerRadius = 10
+        
+        contImageView.layer.cornerRadius = 10
+        contImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        contImageView.kf.indicatorType = .activity
     }
+    
 }
 
 struct ListCellModel{
