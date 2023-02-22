@@ -21,7 +21,7 @@ class ListViewController: UIViewController {
         viewModel.didViewLoad()
         setupBindings()
         setupUI()
-    }
+        }
 
 
 }

@@ -15,7 +15,8 @@ class ListViewControllerTableHelper: NSObject {
     
     weak var tableView: UITableView?
     weak var viewModel: ListViewModel?
-    
+    private var navigationController: UINavigationController?
+
     private var items: [RowItem] = []
     
     init(tableView: UITableView, viewModel: ListViewModel){
@@ -41,7 +42,15 @@ class ListViewControllerTableHelper: NSObject {
 extension ListViewControllerTableHelper: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel?.itemPressed(indexPath.row)
+//        viewModel?.itemPressed(indexPath.row)
+        if InternetManager.shared.isInternetActive() {
+            let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            guard let detailsVC = storyBoard.instantiateViewController(withIdentifier: "showDetail") as? DetailViewController else {
+                return
+            }
+            navigationController?.pushViewController(detailsVC, animated: true)
+        } else {
+        }
     }
 }
 
@@ -56,5 +65,7 @@ extension ListViewControllerTableHelper: UITableViewDataSource{
         cell.configure(with: items[indexPath.row])
         return cell
     }
+    
+    
 }
 
